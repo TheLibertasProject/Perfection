@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import { Menu } from 'lucide-react'
 
 const BG_IMAGE_1 =
   'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260609_195923_b0ba8ace-1d1d-4f2c-9a28-1ab84b330680.png&w=1280&q=85'
@@ -79,28 +78,6 @@ function App() {
           </svg>
           <span className="text-white text-2xl font-playfair italic">Lithos</span>
         </div>
-
-        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-2 py-2 items-center gap-1">
-          <button className="bg-white text-gray-900 px-4 py-1.5 rounded-full text-sm font-medium">
-            Course
-          </button>
-          {['Field Guides', 'Geology', 'Plans', 'Live Tour'].map((item) => (
-            <button
-              key={item}
-              className="text-white/80 px-4 py-1.5 rounded-full text-sm font-medium hover:bg-white/20 hover:text-white transition-colors"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-
-        <button className="hidden md:block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors">
-          Sign Up
-        </button>
-
-        <button className="md:hidden text-white p-2" aria-label="Open menu">
-          <Menu size={24} />
-        </button>
       </nav>
 
       <section
@@ -149,9 +126,6 @@ function App() {
             Our interactive maps let you peel back the crust to trace how stones,
             fossils, and deep time combine to shape the ground beneath your feet.
           </p>
-          <button className="bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#e8702a]/30">
-            Start Digging
-          </button>
         </div>
       </section>
     </div>
